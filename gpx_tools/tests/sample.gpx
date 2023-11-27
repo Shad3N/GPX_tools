@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<gpx version="1.1" creator="ThE WiSeGeoGrapHer">
+
+    <metadata>
+        <name>Sample GPX File</name>
+        <desc>A sample GPX file with two waypoints and a track</desc>
+        <author>
+            <name>Running enthusiast</name>
+        </author>
+    </metadata>
+
+    <wpt lat="37.7749" lon="-122.4194">
+        <ele>10.0</ele>
+        <time>2023-11-25T12:00:00Z</time>
+        <name>Waypoint 1</name>
+        <desc>First waypoint</desc>
+    </wpt>
+
+    <wpt lat="37.7751" lon="-122.4196">
+        <ele>15.0</ele>
+        <time>2023-11-25T12:15:00Z</time>
+        <name>Waypoint 2</name>
+        <desc>Second waypoint</desc>
+    </wpt>
+
+    <trk>
+        <name>Sample Track</name>
+        <desc>A sample track with two points</desc>
+        <trkseg>
+            <trkpt lat="37.7749" lon="-122.4194">
+                <ele>10.0</ele>
+                <time>2023-11-25T12:00:00Z</time>
+            </trkpt>
+            <trkpt lat="37.7751" lon="-122.4196">
+                <ele>15.0</ele>
+                <time>2023-11-25T12:15:00Z</time>
+            </trkpt>
+        </trkseg>
+    </trk>
+
+</gpx>

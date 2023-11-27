@@ -1,0 +1,4 @@
+github.com/olivermichel/vincenty v0.0.0-20200307173401-fb56111bf274 h1:7Cq3K95VLQL4NJvgbKTSBSxUr24prCBG8VyArUwSwQc=
+github.com/olivermichel/vincenty v0.0.0-20200307173401-fb56111bf274/go.mod h1:7kkpoXGTCk74tK8yiV3REDDO9ApFEvU7Nz2Frd9UTIo=
+github.com/umahmood/haversine v0.0.0-20151105152445-808ab04add26 h1:UFHFmFfixpmfRBcxuu+LA9l8MdURWVdVNUHxO5n1d2w=
+github.com/umahmood/haversine v0.0.0-20151105152445-808ab04add26/go.mod h1:IGhd0qMDsUa9acVjsbsT7bu3ktadtGOHI79+idTew/M=
