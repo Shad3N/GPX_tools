@@ -85,7 +85,10 @@ func TestWrite(t *testing.T) {
 	}
 
 	t.Cleanup(func() {
-		os.Remove("/home/shad3n/GolandProjects/GPS_toolkit/gpx_tools/tests/sample2.gpx")
+		err := os.Remove("/home/shad3n/GolandProjects/GPS_toolkit/gpx_tools/tests/sample2.gpx")
+		if err != nil {
+			return
+		}
 	})
 
 }

@@ -18,51 +18,51 @@ A collection of functions for working with GPX files version 1.1.
 ## Usage
 
 ### Parsing .gpx file
-```go
+```
 ParseGpxFile(path string) (gpx Gpx, err error) 
 ```
 
 ### Writing .gpx file
-```go
+```
 WriteGpxFile(gpx Gpx, path string) (err error)
 ```
 
 ### Distance between points
-```go
+```
 (c *Coordinates) HaversineDistanceFrom(coordinates Coordinates) float64
 
 (c *Coordinates) VincentyDistanceFrom(coordinates Coordinates) float64
 ```
 
 ### Total distance of track
-```go
+```
 TotalLength(track *[]CoordConvertible, algorithm DistanceAlgorithm) float64
 ```
 
 ### Sorting points by time
-```go
+```
 SortByTime(points *[]CoordConvertible) error
 ```
 
 ### Total time and average speed of track
-```go
+```
 TotalTime(track *[]CoordConvertible) (time.Duration, error)
 
 AverageVelocity(points *[]CoordConvertible, algorithm DistanceAlgorithm) (float64, error)
 ```
 
 ### Velocity between two points
-```go
+```
 VelocityBetweenPoints(p1 CoordConvertible, p2 CoordConvertible, algorithm DistanceAlgorithm) (float64, error)
 ```
 
 ### Formatting time to string
-```go
+```
 FormatTime(t time.Time) string
 ```
 
 ### Formatting coordinates to string
-```go
+```
 (c *Coordinates) GetLatitudeAsString() string
 
 (c *Coordinates) GetLongitudeAsString() string
@@ -71,13 +71,13 @@ FormatTime(t time.Time) string
 ```
 
 ### Normalizing coordinates
-```go
+```
 Normalize(degrees float64) float64
 ```
 
 ### Other
 
-```go
+```
 NewCoordinates(latitude, longitude float64) Coordinates
 
 (c *Coordinates) GetLatitudeRadians() float64
