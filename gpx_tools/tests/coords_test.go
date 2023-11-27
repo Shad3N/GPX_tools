@@ -49,6 +49,7 @@ func TestParseGpxTime(t *testing.T) {
 }
 
 func TestParseGpx(t *testing.T) {
+	// update this path to match your system
 	gpx, err := gpx_tools.ParseGpxFile("/home/shad3n/GolandProjects/GPS_toolkit/gpx_tools/tests/sample.gpx")
 	if err != nil {
 		t.Errorf(`ParseGpxFile("gpx_test.xml") = %v; want nil`, err)
@@ -74,17 +75,20 @@ func TestGetEmailStr(t *testing.T) {
 }
 
 func TestWrite(t *testing.T) {
+	// update this path to match your system
 	gpx, err := gpx_tools.ParseGpxFile("/home/shad3n/GolandProjects/GPS_toolkit/gpx_tools/tests/sample.gpx")
 	if err != nil {
 		t.Errorf(`ParseGpxFile("gpx_test.xml") = %v; want nil`, err)
 	}
 
+	// update this path to match your system
 	err = gpx_tools.WriteGpxFile(gpx, "/home/shad3n/GolandProjects/GPS_toolkit/gpx_tools/tests/sample2.gpx")
 	if err != nil {
 		t.Errorf(`WriteGpxFile("gpx_test.xml") = %v; want nil`, err)
 	}
 
 	t.Cleanup(func() {
+		// update this path to match your system
 		err := os.Remove("/home/shad3n/GolandProjects/GPS_toolkit/gpx_tools/tests/sample2.gpx")
 		if err != nil {
 			return
